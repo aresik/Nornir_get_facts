@@ -1,0 +1,5 @@
+---
+# defaults.yaml file
+# Strings were quoted to render better on the web
+username: 'cisco'
+password: 'cisco123'
