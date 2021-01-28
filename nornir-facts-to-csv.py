@@ -7,6 +7,7 @@ import csv
 import time
 from datetime import datetime
 
+#Start timer
 start = time.time()
 # current date and time
 now = datetime.now()
