@@ -4,8 +4,10 @@ from nornir_netmiko.tasks import netmiko_send_command, netmiko_send_config
 from nornir_napalm.plugins.tasks import napalm_get
 from nornir_utils.plugins.tasks.files import write_file
 import csv
+import time
 from datetime import datetime
 
+start = time.time()
 # current date and time
 now = datetime.now()
 
@@ -34,6 +36,9 @@ def main() -> None:
     nr = InitNornir(config_file="config.yml")
     result = nr.run(task=dev_info)
     print_result(result)
+    end = time.time()
+    delta = end - start
+    print("Time took to execute: " + str(delta))
 
 if __name__ == "__main__":
     main()

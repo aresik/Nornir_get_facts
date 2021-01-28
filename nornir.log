@@ -1,0 +1,130 @@
+2021-01-28 11:51:49,500 -  nornir.core -     INFO -        run() - Running task 'dev_info' with args {} on 1 hosts
+2021-01-28 11:51:49,503 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 439, in get_connection
+    conn = self.get_connection_parameters(connection)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 373, in get_connection_parameters
+    r = self._get_connection_options_recursively(connection)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 402, in _get_connection_options_recursively
+    sp = g._get_connection_options_recursively(connection)
+AttributeError: 'str' object has no attribute '_get_connection_options_recursively'
+
+2021-01-28 11:51:49,504 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'dev_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir-facts-to-csv.py", line 21, in dev_info
+    r = task.run(netmiko_send_command, command_string="show version", use_genie=True)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2021-01-28 11:53:53,813 -  nornir.core -     INFO -        run() - Running task 'dev_info' with args {} on 1 hosts
+2021-01-28 11:53:53,815 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 439, in get_connection
+    conn = self.get_connection_parameters(connection)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 373, in get_connection_parameters
+    r = self._get_connection_options_recursively(connection)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 402, in _get_connection_options_recursively
+    sp = g._get_connection_options_recursively(connection)
+AttributeError: 'str' object has no attribute '_get_connection_options_recursively'
+
+2021-01-28 11:53:53,815 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'dev_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir-facts-to-csv.py", line 23, in dev_info
+    r = task.run(netmiko_send_command, command_string="show version", use_genie=True)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2021-01-28 11:54:22,133 -  nornir.core -     INFO -        run() - Running task 'dev_info' with args {} on 1 hosts
+2021-01-28 11:54:22,137 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 439, in get_connection
+    conn = self.get_connection_parameters(connection)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 373, in get_connection_parameters
+    r = self._get_connection_options_recursively(connection)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 402, in _get_connection_options_recursively
+    sp = g._get_connection_options_recursively(connection)
+AttributeError: 'str' object has no attribute '_get_connection_options_recursively'
+
+2021-01-28 11:54:22,139 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'dev_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir-facts-to-csv.py", line 23, in dev_info
+    r = task.run(netmiko_send_command, command_string="show version", use_genie=True)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2021-01-28 11:54:48,629 -  nornir.core -     INFO -        run() - Running task 'dev_info' with args {} on 1 hosts
+2021-01-28 11:54:48,631 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 439, in get_connection
+    conn = self.get_connection_parameters(connection)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 373, in get_connection_parameters
+    r = self._get_connection_options_recursively(connection)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 402, in _get_connection_options_recursively
+    sp = g._get_connection_options_recursively(connection)
+AttributeError: 'str' object has no attribute '_get_connection_options_recursively'
+
+2021-01-28 11:54:48,631 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'dev_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir-facts-to-csv.py", line 23, in dev_info
+    r = task.run(netmiko_send_command, command_string="show version", use_genie=True)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2021-01-28 11:55:04,296 -  nornir.core -     INFO -        run() - Running task 'dev_info' with args {} on 1 hosts
+2021-01-28 11:55:04,298 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 439, in get_connection
+    conn = self.get_connection_parameters(connection)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 373, in get_connection_parameters
+    r = self._get_connection_options_recursively(connection)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 402, in _get_connection_options_recursively
+    sp = g._get_connection_options_recursively(connection)
+AttributeError: 'str' object has no attribute '_get_connection_options_recursively'
+
+2021-01-28 11:55:04,298 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'dev_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir-facts-to-csv.py", line 23, in dev_info
+    r = task.run(netmiko_send_command, command_string="show version", use_genie=True)
+  File "/home/ares/.local/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
