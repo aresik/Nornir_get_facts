@@ -9,6 +9,7 @@ from datetime import datetime
 
 #Start timer
 start = time.time()
+
 # current date and time
 now = datetime.now()
 
@@ -33,11 +34,14 @@ def dev_info(task):
         writer = csv.writer(csvfile)
         csvdata =(hoster, task.host.hostname, serial, interno, version, up, image)
         writer.writerow(csvdata)
+
 def main() -> None:
     nr = InitNornir(config_file="config.yml")
     result = nr.run(task=dev_info)
     print_result(result)
+    #End timer
     end = time.time()
+    #Difference between when the script started and ended
     delta = end - start
     print("Time took to execute: " + str(delta))
 
